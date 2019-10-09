@@ -1,0 +1,439 @@
+/*red, black, blue*/
+
+body {
+ font: 15px Arial;
+ color: #black;
+ background-color: black;
+ padding: 0;
+ margin: 0;
+}
+
+.contactNav{
+  color: white;
+  background-color: #003380;
+  width: 100%;
+  height: 10%;
+  padding-top:1%;
+}
+
+/*Pertains to the contact information SECTION as a whole, including logo, services, and contactInfo*/
+.ContactInformation{
+ background-color: black;
+ padding-top: 20px;
+ min-height: 250px;
+ border-top: groove 3px blue;
+}
+
+.ContactInformation #branding {
+ float: left;
+ color: #f2f2f2;
+}
+
+.ContactInformation #branding h2 {
+ margin: 0;
+ margin-bottom : 10px;
+ width: 100%;
+}
+
+.ContactInformation #slogan {
+ color: #7a676a;
+ margin-top: 14%;
+ font-family: "Times New Roman";
+ text-align: left;
+}
+
+.ContactInformation #slogan p{
+ margin-top: 0;
+}
+
+/*Pertains to only the actual contact information, email, number, etc.*/
+#contactInfo {
+ color: white;
+ float: right;
+}
+
+#contactInfo h2 {
+ text-decoration: underline white;
+}
+
+#contactInfo i{
+  color:blue;
+}
+
+.contactLogo {
+ float: left;
+ width: 37%;
+}
+
+/*CHANGEDD THE CONTAINER IN BOOTSTRAP.min.css to make it work*/
+/* Global */
+.container {
+ width: 90%;
+ margin: auto;
+ overflow: hidden;
+/* border: solid pink 10px;*/
+}
+
+.newContainer {
+  padding-top: 25px;
+ /*width: 75%;
+ height: 100%;*/
+ border: solid yellow 10px;
+ padding-left: 5%;
+ display: block;
+ float: right;
+}
+
+footer {
+ background-color: white;
+ text-align: center;
+ padding: 20px;
+ font-size: 16px;
+ font-family: "Times New Roman";
+ border-top: white solid 3px;
+ color: black;
+}
+
+.fixed {
+    position:fixed;
+    text-align: center;
+    background-color: black;
+    overflow: visible;
+    z-index: 10;
+}
+
+
+.hcontainer{
+  padding-top: 20px;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+  border-bottom: blue groove 10px;
+  max-height: 500px;
+}
+
+header {
+ background-color: black;
+ min-height: 70px;
+ width: 100%;
+}
+
+header a {
+ color: #f2f2f2;
+ font-size: 16px;
+ font-weight: bold;
+ text-transform: uppercase;
+}
+
+header #branding {
+ color: #f2f2f2;
+}
+
+header #branding h2 {
+ margin: 0;
+ margin-bottom: 20px;
+}
+
+header li {
+  padding: 0 20px 0 20px;
+  float:left;
+  display: inline;
+}
+
+header nav {
+  width: 50%;
+  /*border: green solid 1px;*/
+ /*min-height: 70px;*/
+ float: right;
+ margin-top: 15px;
+}
+
+nav a:hover {
+ color: rgb(194, 191, 191)
+}
+
+.highlight {
+ color: blue;
+}
+
+.projectsIntro h1{
+  color: black;
+  font-size: 50px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+.projectsIntro {
+ min-height: 400px; /*Height: 1205px*/
+ background:url('../img/sienaWay1.jpg');
+ background-size: cover;
+ text-align: center;
+ border-bottom: groove 3px blue;
+}
+
+#project1{
+  /*border: orange solid 2px;*/
+  border-bottom: 1px black solid;
+  background-color: black;
+  /*border: 1px black solid;*/ /*IDK WHY THIS IS THE ONLY FIX TO THE WHITE SECTION BENEATH THIS SECTION'S DESCRIPTION*/
+}
+
+#project2{
+  background-color: black;
+ /*border: 1px black solid*/; /*IDK WHY THIS IS THE ONLY FIX TO THE WHITE SECTION BENEATH THIS SECTION'S DESCRIPTION*/
+}
+
+#project2 img{
+}
+
+.project{
+  padding-top: 15px;
+  background-color: black;
+  display: inline;
+  border: red solid 2px;
+  border-width: thick;
+  /*width: 50%;
+  height: 100%;*/
+}
+
+.projectDescription{
+  padding-top: 15px;
+  color: white;
+  background-color: black;
+  /*display: inline-block;*/
+  margin: 0px 0px 25px 25%;
+}
+
+#imgSlideshow {
+ min-height: 800px; /*Height: 1205px*/
+ background:url('../img/SunsetTower.jpg') no-repeat 0 ;
+ background-size: cover;
+ text-align: center;
+ border-bottom: groove 3px blue;
+}
+
+#imgSlideshow h1{
+ margin-top:100px;
+ font-size:60px;
+ margin-bottom:10px;
+ color: black;
+ font-family: "Times New Roman"
+}
+
+#imgSlideshow p{
+ font-size:20px;
+ color: black;
+ background: rgba(252, 252, 252, 0.5);
+}
+
+#installations {
+ padding-top: 20px;
+ background-color: black;
+
+}
+
+#installations .box {
+ float: left;
+ text-align: center;
+ height: 300px;
+ /*width: 32%;*/
+ /*border: groove 7px blue;*/
+ border-bottom: groove 7px blue;
+ margin-bottom: 20px;
+ background-color: black;
+ /*
+ margin-left: 5px;
+ margin-right:5px;
+ */
+}
+
+
+#installations .card-img {
+  height: 100%;
+  width: auto;
+}
+
+#installations .box:hover{
+  color: red;
+  opacity: 0.9;
+}
+
+#installations h4{
+ color: blue;
+ font-weight: bold;
+ font-size: 20px;
+}
+
+#installations p{
+ font-weight: bold;
+ color: white;
+ /*background: rgba(252, 252, 252, 0.5);*/
+}
+
+.installationCard {
+  border: green 10px solid;
+}
+
+#logo {
+ float: left;
+}
+
+#logo img{
+ width: 50px;
+ height: 50px;
+}
+
+#Services h3 {
+  text-decoration: underline blue;
+  text-transform: uppercase;
+  font-family: "Lucida Console"
+}
+
+#Services {
+  margin-bottom: 20px;
+  display: inline-block;
+  color: white;
+  width: 26%;
+  line-height: 80%;
+  margin-left: 5%;
+}
+
+#Services i{
+  color:blue;
+  padding-right: 10px;
+}
+
+#Services li:hover{
+  color: rgb(194, 191, 191);
+  margin-left: 5px;
+}
+
+.trademark {
+  width: 40%;
+  float: left;
+  /*border: solid orange 3px;*/
+}
+
+ul {
+ margin: 0;
+ padding: 0;
+}
+
+@media (max-width: 1155px){
+  header nav li,
+  header{
+    /*border: turquoise 10px solid;*/
+  }
+  header #logo{
+    /*border: yellow solid 3px;*/
+    display: inline-block;
+  }
+  header #branding {
+    /*border: white solid 2px;*/
+    display: inline-block;
+  }
+  header nav{
+    width: 100%;
+    /*border: green solid 3px;*/
+  }
+  header .trademark {
+    width: 100%;
+    border-bottom: rgb(194, 191, 191) 1px solid;
+    /*display: inline-block;*/
+  }
+  .contactLogo{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  #Services{
+    height: auto;
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+  #contactInfo{
+    display: block;
+    width: 100%;
+  }
+  #contactInfo h2{
+    font-family: "Lucida Console";
+  }
+  .ContactInformation #slogan {
+    color: #7a676a;
+    display: inline-block;
+    margin-top: 0;
+    font-family: "Times New Roman";
+    text-align: left;
+ }
+}
+
+@media (max-width: 600px){
+  header li {
+    visibility: hidden;
+    height: 0px;
+    font-size: 0px;
+    margin: 0px;
+  }
+  header {
+    height: 50px;
+    position: fixed;
+    z-index: 10;
+  }
+  .ContactInformation #slogan {
+   color: #7a676a;
+   font-family: "Times New Roman";
+  }
+  header .trademark {
+    width: 100%;
+    border-bottom: none;
+    height: 35px;
+    /*display: inline-block;*/
+  }
+  .contactNav{
+    visibility: hidden;
+}
+/*
+
+@media (max-width: 992px){
+  #installations,
+  header {
+    border: pink 4px solid;
+    text-align: center;
+  }
+  header nav li{
+    text-align: center;
+    border: green solid 5px;
+    float: right;
+  }
+  header nav{
+    padding-left: 1%;
+    border: white 10px solid;
+    width: 90%;
+    margin: 0 auto;
+    float: right;
+  }
+  header #logo{
+    display: block;
+    padding-left: 15%;
+    border: yellow solid 3px;
+  }
+  header #branding {
+    display: block;
+    padding-left: 50px;
+    text-align: center;
+    border: white solid 8px;
+  }
+}
+*/
+
+/*
+@media screen (width: 575px){
+
+}
+
+@media screen (width: 990) {
+
+}
+*/
