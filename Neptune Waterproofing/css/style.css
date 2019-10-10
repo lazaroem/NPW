@@ -2,15 +2,16 @@
 
 body {
  font: 15px Arial;
- color: #black;
- background-color: black;
+ color: white;
+ background-color: white;
  padding: 0;
  margin: 0;
 }
 
 .contactNav{
   color: white;
-  background-color: #003380;
+  /*background-color: #003380;*/
+  background-color: black;
   width: 100%;
   height: 10%;
   padding-top:1%;
@@ -26,13 +27,14 @@ body {
 
 .ContactInformation #branding {
  float: left;
- color: #f2f2f2;
+ /*color: #f2f2f2;*/
 }
 
 .ContactInformation #branding h2 {
  margin: 0;
  margin-bottom : 10px;
  width: 100%;
+ color: red;
 }
 
 .ContactInformation #slogan {
@@ -84,6 +86,13 @@ body {
  float: right;
 }
 
+#estimateButton {
+  padding-top: 25px;
+  padding-right: 300px; /*FIX THIS, THERES A BU G I BELIVE */
+  width: 15%;
+  float: right;
+}
+
 footer {
  background-color: white;
  text-align: center;
@@ -102,11 +111,31 @@ footer {
     z-index: 10;
 }
 
+#freeEstimate{
+  background-color: #000080;
+  height: 100px;
+  display: inline-block;
+  width: 100%;
+}
+
+#estimateFont {
+  padding-top: 20px;
+  padding-left: 150px;
+  width: 50%;
+  float: left;
+}
+
+#estimateFont h3{
+  color: red;
+  font-size: 40px;
+  display: inline-block;
+  width: 50%;
+}
 
 .hcontainer{
   padding-top: 20px;
   width: 100%;
-  background-color: black;
+  background-color: white;
   overflow: hidden;
   border-bottom: blue groove 10px;
   max-height: 500px;
@@ -119,14 +148,16 @@ header {
 }
 
 header a {
- color: #f2f2f2;
+ /*color: #f2f2f2;*/
+ color: red;
  font-size: 16px;
  font-weight: bold;
  text-transform: uppercase;
 }
 
 header #branding {
- color: #f2f2f2;
+ /*color: #f2f2f2;*/
+ color: red;
 }
 
 header #branding h2 {
@@ -205,7 +236,7 @@ nav a:hover {
 }
 
 #imgSlideshow {
- min-height: 800px; /*Height: 1205px*/
+ min-height: 700px; /*Height: 1205px*/
  background:url('../img/SunsetTower.jpg') no-repeat 0 ;
  background-size: cover;
  text-align: center;
@@ -228,10 +259,11 @@ nav a:hover {
 
 #installations {
  padding-top: 20px;
- background-color: black;
+ background-color: white;
 
 }
 
+/*FIGURE OUT A FORMULA TO SCALE THESE IMAGES NICELY, ON PC IT'S UGLY, ON LAPTOP IT'S NICE*/
 #installations .box {
  float: left;
  text-align: center;
