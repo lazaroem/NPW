@@ -88,7 +88,7 @@ body {
 
 #estimateButton {
   padding-top: 25px;
-  padding-right: 300px; /*FIX THIS, THERES A BU G I BELIVE */
+  padding-right: 150px; /*FIX THIS, THERES A BU G I BELIVE */
   width: 15%;
   float: right;
 }
@@ -120,8 +120,8 @@ footer {
 
 #estimateFont {
   padding-top: 20px;
-  padding-left: 150px;
-  width: 50%;
+  padding-left: 50px;
+  width: 70%;
   float: left;
 }
 
@@ -129,7 +129,6 @@ footer {
   color: red;
   font-size: 40px;
   display: inline-block;
-  width: 50%;
 }
 
 .hcontainer{
@@ -240,7 +239,7 @@ nav a:hover {
  background:url('../img/SunsetTower.jpg') no-repeat 0 ;
  background-size: cover;
  text-align: center;
- border-bottom: groove 3px blue;
+ border-bottom: groove 3px white;
 }
 
 #imgSlideshow h1{
@@ -401,7 +400,28 @@ ul {
  }
 }
 
+@media (max-width: 700px) {
+  #estimateFont{
+    padding-left: 0;
+  }
+  #estimateButton {
+    padding-right: 120px;
+  }
+}
+
 @media (max-width: 600px){
+  #freeEstimate{
+    height: 200px;
+  }
+  #estimateFont{
+    padding-left: 0;
+    width: 100%;
+  }
+  #estimateButton {
+    width: 100%;
+    float:
+
+  }
   header li {
     visibility: hidden;
     height: 0px;
@@ -425,6 +445,7 @@ ul {
   }
   .contactNav{
     visibility: hidden;
+  }
 }
 /*
 
