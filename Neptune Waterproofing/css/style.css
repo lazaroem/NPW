@@ -80,7 +80,7 @@ body {
   padding-top: 25px;
  /*width: 75%;
  height: 100%;*/
- border: solid yellow 10px;
+ /*border: solid yellow 10px;*/
  padding-left: 5%;
  display: block;
  float: right;
@@ -194,7 +194,7 @@ nav a:hover {
 }
 
 .projectsIntro {
- min-height: 400px; /*Height: 1205px*/
+ min-height: 850px; /*Height: 1205px*/
  background:url('../img/sienaWay1.jpg');
  background-size: cover;
  text-align: center;
@@ -216,7 +216,7 @@ nav a:hover {
 #project2 img{
 }
 
-.project{
+#projects{
   padding-top: 15px;
   background-color: black;
   display: inline;
