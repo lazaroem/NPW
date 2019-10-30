@@ -30,7 +30,7 @@ body {
  /*color: #f2f2f2;*/
 }
 
-.ContactInformation #branding h2 {
+.ContactInformation #branding h3 {
  margin: 0;
  margin-bottom : 10px;
  width: 100%;
@@ -39,13 +39,14 @@ body {
 
 .ContactInformation #slogan {
  color: #7a676a;
- margin-top: 14%;
- font-family: "Times New Roman";
+ display: inline-block;
+  font-family: "Times New Roman";
  text-align: left;
 }
 
 .ContactInformation #slogan p{
  margin-top: 0;
+ color: white;
 }
 
 /*Pertains to only the actual contact information, email, number, etc.*/
@@ -56,6 +57,7 @@ body {
 
 #contactInfo h2 {
  text-decoration: underline white;
+ color: red;
 }
 
 #contactInfo i{
@@ -82,7 +84,6 @@ body {
  /*width: 75%;
  height: 100%;*/
  /*border: solid yellow 10px;*/
- padding-left: 5%;
  display: block;
 }
 
@@ -194,17 +195,19 @@ nav a:hover {
 }
 
 .projectsIntro {
- min-height: 850px; /*Height: 1205px*/
- background:url('../img/BroadwayDeckWP.jpg');
+ min-height: 700px; /*Height: 1205px*/
+ background:url('../img/BroadwayDeckWP2.jpg') no-repeat 0;
  background-size: cover;
  text-align: center;
  border-bottom: groove 3px blue;
+ max-width: 100%;
+ margin: auto;
+ /*transform: rotate(90deg);*/
 }
 
 #project1{
   /*border: orange solid 2px;*/
   float: right;
-  border-bottom: 1px black solid;
   background-color: white;
 
   /*border: 1px black solid;*/ /*IDK WHY THIS IS THE ONLY FIX TO THE WHITE SECTION BENEATH THIS SECTION'S DESCRIPTION*/
@@ -212,16 +215,18 @@ nav a:hover {
 
 #project1 .card{
   float: right;
+  border: blue solid 3px;
 }
 
 #project2{
-  background-color: white;
+  background-color: white; /*SILVER LOOKS PRETTY BOMB*/
   color: black;
  /*border: 1px black solid*/; /*IDK WHY THIS IS THE ONLY FIX TO THE WHITE SECTION BENEATH THIS SECTION'S DESCRIPTION*/
 }
 
 #project2 .card{
   float: left;
+  border: red solid 3px;
 }
 
 /*
@@ -231,11 +236,10 @@ nav a:hover {
 */
 
 .projectDescription{
-  /*border: green solid 4px;*/
   padding-top: 15px;
   color: black;
   background-color: white;
-  /*display: inline-block;*/
+  display: inline-block;
   margin: 0px 0px 25px 25%;
 }
 
