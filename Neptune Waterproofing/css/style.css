@@ -79,11 +79,9 @@ body {
 }
 
 .newContainer {
-  background-color: white;
   padding-top: 25px;
  /*width: 75%;
  height: 100%;*/
- /*border: solid yellow 10px;*/
  display: block;
 }
 
@@ -188,57 +186,67 @@ nav a:hover {
 }
 
 .projectsIntro h1{
-  color: black;
+  color: blue;
   font-size: 50px;
   font-family: 'Lato', sans-serif;
   text-align: center;
+  padding-top: 15%;
+}
+
+.projectsIntro p{
+  background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5));
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  max-width: 75%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .projectsIntro {
- min-height: 700px; /*Height: 1205px*/
- background:url('../img/BroadwayDeckWP2.jpg') no-repeat 0;
- background-size: cover;
- text-align: center;
- border-bottom: groove 3px blue;
- max-width: 100%;
- margin: auto;
- /*transform: rotate(90deg);*/
+    vertical-align: middle;
+    min-height: 700px; /*Height: 1205px*/
+    background:url('../img/BroadwayDeckWP2.jpg ') no-repeat center 0;
+    background-size: cover;
+    text-align: center;
+    border-bottom: groove 3px blue;
+    max-width: 100%;
+    margin: auto;
+    /*transform: rotate(90deg);*/
+}
+
+.projectsIntro img{
+  filter: brightness(50%);
 }
 
 #project1{
   /*border: orange solid 2px;*/
   float: right;
-  background-color: white;
 
   /*border: 1px black solid;*/ /*IDK WHY THIS IS THE ONLY FIX TO THE WHITE SECTION BENEATH THIS SECTION'S DESCRIPTION*/
 }
 
 #project1 .card{
   float: right;
-  border: blue solid 3px;
 }
 
 #project2{
-  background-color: white; /*SILVER LOOKS PRETTY BOMB*/
+  /*background-color: white; SILVER LOOKS PRETTY BOMB*/
   color: black;
  /*border: 1px black solid*/; /*IDK WHY THIS IS THE ONLY FIX TO THE WHITE SECTION BENEATH THIS SECTION'S DESCRIPTION*/
 }
 
 #project2 .card{
   float: left;
-  border: red solid 3px;
 }
 
-/*
-#projects{
-  border-bottom: solid 3px blue;
+#projGradient{
+  background-image: linear-gradient(white,rgba(0,0,254,0.5), rgba(254,0,0,0.5), rgba(0,0,254,0.5), white);
 }
-*/
 
 .projectDescription{
   padding-top: 15px;
   color: black;
-  background-color: white;
   display: inline-block;
   margin: 0px 0px 25px 25%;
 }
