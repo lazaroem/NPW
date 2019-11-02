@@ -19,7 +19,8 @@ body {
 
 /*Pertains to the contact information SECTION as a whole, including logo, services, and contactInfo*/
 .ContactInformation{
- background-color: black;
+  background-image: linear-gradient(bLack,rgba(0,0,254,0.5),black);
+  color: black;
  padding-top: 20px;
  min-height: 250px;
  border-top: groove 3px blue;
@@ -275,8 +276,7 @@ nav a:hover {
 
 #installations {
  padding-top: 20px;
- background-color: white;
-
+ background-image: linear-gradient(white,rgba(0,0,254,0.5), rgba(254,0,0,0.5), rgba(0,0,254,0.5), white);
 }
 
 /*FIGURE OUT A FORMULA TO SCALE THESE IMAGES NICELY, ON PC IT'S UGLY, ON LAPTOP IT'S NICE*/
@@ -286,9 +286,7 @@ nav a:hover {
  height: 300px;
  /*width: 32%;*/
  /*border: groove 7px blue;*/
- border-bottom: groove 7px blue;
  margin-bottom: 20px;
- background-color: black;
  /*
  margin-left: 5px;
  margin-right:5px;
