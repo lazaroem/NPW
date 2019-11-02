@@ -227,6 +227,7 @@ nav a:hover {
   /*border: 1px black solid;*/ /*IDK WHY THIS IS THE ONLY FIX TO THE WHITE SECTION BENEATH THIS SECTION'S DESCRIPTION*/
 }
 
+
 #project1 .card{
   float: right;
 }
@@ -239,10 +240,15 @@ nav a:hover {
 
 #project2 .card{
   float: left;
+  display: inline-block;
+}
+
+#project3 .card{
+  float: right;
 }
 
 #projGradient{
-  background-image: linear-gradient(white,rgba(0,0,254,0.5), rgba(254,0,0,0.5), rgba(0,0,254,0.5), white);
+  background-image: linear-gradient(white,rgba(0,0,254,0.5), rgba(254,0,0,0.6), rgba(0,0,254,0.5), white);
 }
 
 .projectDescription{
@@ -251,6 +257,14 @@ nav a:hover {
   display: inline-block;
   margin: 0px 0px 25px 25%;
 }
+
+.descriptionLeft{
+  padding-top: 15px;
+  float: left;
+  color: black;
+  margin: 0px 25% 0 25px;
+}
+
 
 #imgSlideshow {
  min-height: 700px; /*Height: 1205px*/

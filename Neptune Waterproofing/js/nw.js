@@ -6,10 +6,12 @@ $(document).ready(function() {
     var aboveHeight = $(".contactNav").outerHeight();
     var navHeight = $(".hcontainer").outerHeight();
 
-    // when scroll
+/////////////////////////////////////////////
+    // when user scrolls, do this
     $(window).scroll(function(){
 
         // if scrolled down more than the header’s height
+        //MAKES A STICKY HEADER
         if ($(window).scrollTop() > aboveHeight){
 
             // if yes, add “fixed” class to the <nav>
@@ -30,5 +32,19 @@ $(document).ready(function() {
             $('.hcontainer').removeClass('fixed').next().css('padding-top','0');
             $('.contactNav').show();
         }
+    });
+/////////////////////////////////////////////
+  //When click CONTACT section above on HEADER
+    $("contactScroll").on('click', function(event) {
+      if(this.hash !== ""){
+        event.preventDefault();
+        var hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
     });
 });
