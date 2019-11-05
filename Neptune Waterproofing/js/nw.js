@@ -35,14 +35,17 @@ $(document).ready(function() {
     });
 /////////////////////////////////////////////
   //When click CONTACT section above on HEADER
-    $("contactScroll").on('click', function(event) {
+    $(".contactScroll").on('click', function(event) {
       if(this.hash !== ""){
         event.preventDefault();
         var hash = this.hash;
 
+
+//EXPLANATION: So, my href is #contact. When clicked, hash = contact. In order to get an actual top offset value for "contact"
+//We would need to have id="conatct" for the section we would like to scroll to :)
         $('html, body').animate({
           scrollTop: $(hash).offset().top
-        }, 800, function(){
+        },  1200, function(){
           window.location.hash = hash;
         });
       }
