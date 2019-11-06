@@ -93,6 +93,15 @@ body {
   float: right;
 }
 
+#estimateButton a {
+  color: red;
+}
+
+#estimateButton button:hover {
+  background-color: #A2CBFC;
+}
+
+
 footer {
  background-color: white;
  text-align: center;
