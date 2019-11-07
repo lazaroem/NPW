@@ -65,6 +65,10 @@ body {
   color:blue;
 }
 
+#contactInfo a:hover{
+  color: rgb(194, 191, 191);
+}
+
 .contactLogo {
  float: left;
  width: 37%;
@@ -157,10 +161,38 @@ header {
 
 header a {
  /*color: #f2f2f2;*/
- color: red;
+ color: white;
  font-size: 16px;
  font-weight: bold;
  text-transform: uppercase;
+}
+
+header a:hover {
+  color: red;
+}
+
+.phoneNum{
+  padding-right: 10px;
+}
+
+/*For the bottom contact section*/
+.phoneNumLink{
+  color: white;
+}
+
+.emailLink{
+  color: white;
+}
+
+.contactHover:hover{
+  color: rgb(194, 191, 191);
+}
+
+.nav-element{
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 header #branding {
@@ -188,7 +220,7 @@ header nav {
 }
 
 nav a:hover {
- color: rgb(194, 191, 191)
+ color: blue;
 }
 
 .highlight {
