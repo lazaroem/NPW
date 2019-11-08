@@ -262,7 +262,6 @@ nav a:hover {
 }
 
 #project1{
-  /*border: orange solid 2px;*/
   float: right;
 
   /*border: 1px black solid;*/ /*IDK WHY THIS IS THE ONLY FIX TO THE WHITE SECTION BENEATH THIS SECTION'S DESCRIPTION*/
@@ -285,6 +284,14 @@ nav a:hover {
 }
 
 #project3 .card{
+  float: right;
+}
+
+#project4 .card{
+  float: left;
+}
+
+#project5 .card{
   float: right;
 }
 
