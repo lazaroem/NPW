@@ -2,15 +2,16 @@
 
 body {
  font: 15px Arial;
- color: #black;
- background-color: black;
+ color: white;
+ background-color: white;
  padding: 0;
  margin: 0;
 }
 
 .contactNav{
   color: white;
-  background-color: #003380;
+  /*background-color: #003380;*/
+  background-color: black;
   width: 100%;
   height: 10%;
   padding-top:1%;
@@ -18,7 +19,8 @@ body {
 
 /*Pertains to the contact information SECTION as a whole, including logo, services, and contactInfo*/
 .ContactInformation{
- background-color: black;
+  background-image: linear-gradient(bLack,rgba(0,0,254,0.5),black);
+  color: black;
  padding-top: 20px;
  min-height: 250px;
  border-top: groove 3px blue;
@@ -26,24 +28,26 @@ body {
 
 .ContactInformation #branding {
  float: left;
- color: #f2f2f2;
+ /*color: #f2f2f2;*/
 }
 
-.ContactInformation #branding h2 {
+.ContactInformation #branding h3 {
  margin: 0;
  margin-bottom : 10px;
  width: 100%;
+ color: red;
 }
 
 .ContactInformation #slogan {
  color: #7a676a;
- margin-top: 14%;
- font-family: "Times New Roman";
+ display: inline-block;
+  font-family: "Times New Roman";
  text-align: left;
 }
 
 .ContactInformation #slogan p{
  margin-top: 0;
+ color: white;
 }
 
 /*Pertains to only the actual contact information, email, number, etc.*/
@@ -54,10 +58,15 @@ body {
 
 #contactInfo h2 {
  text-decoration: underline white;
+ color: red;
 }
 
 #contactInfo i{
   color:blue;
+}
+
+#contactInfo a:hover{
+  color: rgb(194, 191, 191);
 }
 
 .contactLogo {
@@ -78,11 +87,24 @@ body {
   padding-top: 25px;
  /*width: 75%;
  height: 100%;*/
- border: solid yellow 10px;
- padding-left: 5%;
  display: block;
- float: right;
 }
+
+#estimateButton {
+  padding-top: 25px;
+  padding-right: 150px; /*FIX THIS, THERES A BU G I BELIVE */
+  width: 15%;
+  float: right;
+}
+
+#estimateButton a {
+  color: red;
+}
+
+#estimateButton button:hover {
+  background-color: #A2CBFC;
+}
+
 
 footer {
  background-color: white;
@@ -102,11 +124,30 @@ footer {
     z-index: 10;
 }
 
+#freeEstimate{
+  background-color: #000080;
+  height: 100px;
+  display: inline-block;
+  width: 100%;
+}
+
+#estimateFont {
+  padding-top: 20px;
+  padding-left: 50px;
+  width: 70%;
+  float: left;
+}
+
+#estimateFont h3{
+  color: red;
+  font-size: 40px;
+  display: inline-block;
+}
 
 .hcontainer{
   padding-top: 20px;
   width: 100%;
-  background-color: black;
+  background-color: white;
   overflow: hidden;
   border-bottom: blue groove 10px;
   max-height: 500px;
@@ -119,14 +160,44 @@ header {
 }
 
 header a {
- color: #f2f2f2;
+ /*color: #f2f2f2;*/
+ color: white;
  font-size: 16px;
  font-weight: bold;
  text-transform: uppercase;
 }
 
+header a:hover {
+  color: red;
+}
+
+.phoneNum{
+  padding-right: 10px;
+}
+
+/*For the bottom contact section*/
+.phoneNumLink{
+  color: white;
+}
+
+.emailLink{
+  color: white;
+}
+
+.contactHover:hover{
+  color: rgb(194, 191, 191);
+}
+
+.nav-element{
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 header #branding {
- color: #f2f2f2;
+ /*color: #f2f2f2;*/
+ color: red;
 }
 
 header #branding h2 {
@@ -149,7 +220,7 @@ header nav {
 }
 
 nav a:hover {
- color: rgb(194, 191, 191)
+ color: blue;
 }
 
 .highlight {
@@ -157,59 +228,98 @@ nav a:hover {
 }
 
 .projectsIntro h1{
-  color: black;
+  color: blue;
   font-size: 50px;
   font-family: 'Lato', sans-serif;
   text-align: center;
+  padding-top: 15%;
+}
+
+.projectsIntro p{
+  background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5));
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  max-width: 75%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .projectsIntro {
- min-height: 400px; /*Height: 1205px*/
- background:url('../img/sienaWay1.jpg');
- background-size: cover;
- text-align: center;
- border-bottom: groove 3px blue;
+    vertical-align: middle;
+    min-height: 700px; /*Height: 1205px*/
+    background:url('../img/BroadwayDeckWP2.jpg ') no-repeat center 0;
+    background-size: cover;
+    text-align: center;
+    border-bottom: groove 3px blue;
+    max-width: 100%;
+    margin: auto;
+    /*transform: rotate(90deg);*/
+}
+
+.projectsIntro img{
+  filter: brightness(50%);
 }
 
 #project1{
-  /*border: orange solid 2px;*/
-  border-bottom: 1px black solid;
-  background-color: black;
+  float: right;
+
   /*border: 1px black solid;*/ /*IDK WHY THIS IS THE ONLY FIX TO THE WHITE SECTION BENEATH THIS SECTION'S DESCRIPTION*/
 }
 
+
+#project1 .card{
+  float: right;
+}
+
 #project2{
-  background-color: black;
+  /*background-color: white; SILVER LOOKS PRETTY BOMB*/
+  color: black;
  /*border: 1px black solid*/; /*IDK WHY THIS IS THE ONLY FIX TO THE WHITE SECTION BENEATH THIS SECTION'S DESCRIPTION*/
 }
 
-#project2 img{
+#project2 .card{
+  float: left;
+  display: inline-block;
 }
 
-.project{
-  padding-top: 15px;
-  background-color: black;
-  display: inline;
-  border: red solid 2px;
-  border-width: thick;
-  /*width: 50%;
-  height: 100%;*/
+#project3 .card{
+  float: right;
+}
+
+#project4 .card{
+  float: left;
+}
+
+#project5 .card{
+  float: right;
+}
+
+#projGradient{
+  background-image: linear-gradient(white,rgba(0,0,254,0.5), rgba(254,0,0,0.6), rgba(0,0,254,0.5), white);
 }
 
 .projectDescription{
   padding-top: 15px;
-  color: white;
-  background-color: black;
-  /*display: inline-block;*/
+  color: black;
+  display: inline-block;
   margin: 0px 0px 25px 25%;
 }
 
+.descriptionLeft{
+  padding-top: 15px;
+  float: left;
+  color: black;
+  margin: 0px 25% 0 25px;
+}
+
+
 #imgSlideshow {
- min-height: 800px; /*Height: 1205px*/
+ min-height: 700px; /*Height: 1205px*/
  background:url('../img/SunsetTower.jpg') no-repeat 0 ;
  background-size: cover;
  text-align: center;
- border-bottom: groove 3px blue;
+ border-bottom: groove 3px white;
 }
 
 #imgSlideshow h1{
@@ -228,19 +338,17 @@ nav a:hover {
 
 #installations {
  padding-top: 20px;
- background-color: black;
-
+ background-image: linear-gradient(white,rgba(0,0,254,0.5), rgba(254,0,0,0.5), rgba(0,0,254,0.5), white);
 }
 
+/*FIGURE OUT A FORMULA TO SCALE THESE IMAGES NICELY, ON PC IT'S UGLY, ON LAPTOP IT'S NICE*/
 #installations .box {
  float: left;
  text-align: center;
  height: 300px;
  /*width: 32%;*/
  /*border: groove 7px blue;*/
- border-bottom: groove 7px blue;
  margin-bottom: 20px;
- background-color: black;
  /*
  margin-left: 5px;
  margin-right:5px;
@@ -369,7 +477,28 @@ ul {
  }
 }
 
+@media (max-width: 700px) {
+  #estimateFont{
+    padding-left: 0;
+  }
+  #estimateButton {
+    padding-right: 120px;
+  }
+}
+
 @media (max-width: 600px){
+  #freeEstimate{
+    height: 200px;
+  }
+  #estimateFont{
+    padding-left: 0;
+    width: 100%;
+  }
+  #estimateButton {
+    width: 100%;
+    float:
+
+  }
   header li {
     visibility: hidden;
     height: 0px;
@@ -393,6 +522,7 @@ ul {
   }
   .contactNav{
     visibility: hidden;
+  }
 }
 /*
 

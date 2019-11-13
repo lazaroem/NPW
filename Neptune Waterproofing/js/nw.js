@@ -6,10 +6,12 @@ $(document).ready(function() {
     var aboveHeight = $(".contactNav").outerHeight();
     var navHeight = $(".hcontainer").outerHeight();
 
-    // when scroll
+/////////////////////////////////////////////
+    // when user scrolls, do this
     $(window).scroll(function(){
 
         // if scrolled down more than the header’s height
+        //MAKES A STICKY HEADER
         if ($(window).scrollTop() > aboveHeight){
 
             // if yes, add “fixed” class to the <nav>
@@ -30,5 +32,22 @@ $(document).ready(function() {
             $('.hcontainer').removeClass('fixed').next().css('padding-top','0');
             $('.contactNav').show();
         }
+    });
+/////////////////////////////////////////////
+  //When click CONTACT section above on HEADER
+    $(".contactScroll").on('click', function(event) {
+      if(this.hash !== ""){
+        event.preventDefault();
+        var hash = this.hash;
+
+
+//EXPLANATION: So, my href is #contact. When clicked, hash = contact. In order to get an actual top offset value for "contact"
+//We would need to have id="conatct" for the section we would like to scroll to :)
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        },  1200, function(){
+          window.location.hash = hash;
+        });
+      }
     });
 });
