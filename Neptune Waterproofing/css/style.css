@@ -74,6 +74,19 @@ body {
  width: 37%;
 }
 
+.projectTitle{
+  color: blue;
+  font-size: 30px;
+}
+
+.rotate180{
+  transform: rotate(180deg);
+}
+
+.rotate90{
+  transform: rotate(90deg);
+}
+
 /*CHANGEDD THE CONTAINER IN BOOTSTRAP.min.css to make it work*/
 /* Global */
 .container {
@@ -81,6 +94,19 @@ body {
  margin: auto;
  overflow: hidden;
 /* border: solid pink 10px;*/
+}
+
+.floatHeaderRight{
+  float: left;
+}
+
+.gallerySection{
+  border: blue solid 2px;
+}
+
+.gallerySize{
+max-width: 200px;
+height: 200px;
 }
 
 .newContainer {
