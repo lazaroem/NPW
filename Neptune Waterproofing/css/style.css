@@ -75,7 +75,6 @@ body {
 }
 
 .imgRight{
-  border: teal solid 1px;
 }
 
 .projectTitle{
@@ -104,13 +103,17 @@ body {
   float: left;
 }
 
-.gallerySection{
-  border: blue solid 2px;
+.galleryLeft{
+  max-width: 33%;
+  display: inline-block;
 }
+
+
 
 .gallerySize{
 max-width: 200px;
 height: 200px;
+border: black solid 3px;
 }
 
 .newContainer {
@@ -118,6 +121,7 @@ height: 200px;
  /*width: 75%;
  height: 100%;*/
  display: block;
+ border: solid green 3px;
 }
 
 #estimateButton {
@@ -291,21 +295,11 @@ nav a:hover {
   filter: brightness(50%);
 }
 
-#project1{
-  float: right;
-
-  /*border: 1px black solid;*/ /*IDK WHY THIS IS THE ONLY FIX TO THE WHITE SECTION BENEATH THIS SECTION'S DESCRIPTION*/
-}
 
 
 #project1 .card{
   float: right;
-}
 
-#project2{
-  /*background-color: white; SILVER LOOKS PRETTY BOMB*/
-  color: black;
- /*border: 1px black solid*/; /*IDK WHY THIS IS THE ONLY FIX TO THE WHITE SECTION BENEATH THIS SECTION'S DESCRIPTION*/
 }
 
 #project2 .card{
@@ -341,6 +335,7 @@ nav a:hover {
   float: left;
   color: black;
   margin: 0px 25% 0 25px;
+  display: inline-block;
 }
 
 
