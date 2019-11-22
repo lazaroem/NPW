@@ -74,6 +74,10 @@ body {
  width: 37%;
 }
 
+.imgRight{
+  border: teal solid 1px;
+}
+
 .projectTitle{
   color: blue;
   font-size: 30px;
