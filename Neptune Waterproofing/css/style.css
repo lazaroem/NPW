@@ -108,20 +108,28 @@ body {
   display: inline-block;
 }
 
-
+.roundedCard{
+  border-radius: 25px;
+}
 
 .gallerySize{
 max-width: 200px;
 height: 200px;
-border: black solid 3px;
+padding-bottom: 10px;
+/*border: blue solid 1px;*/
 }
 
 .newContainer {
   padding-top: 25px;
- /*width: 75%;
- height: 100%;*/
- display: block;
- border: solid green 3px;
+  /*
+  padding-left: 15px;
+  padding-right: 15px;*/
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  /*border: solid green 3px;*/
 }
 
 #estimateButton {
@@ -295,11 +303,16 @@ nav a:hover {
   filter: brightness(50%);
 }
 
-
+#project1{
+  border-bottom: groove red 7px;
+}
 
 #project1 .card{
   float: right;
+}
 
+#project2{
+  border-bottom: groove red 7px;
 }
 
 #project2 .card{
@@ -309,6 +322,7 @@ nav a:hover {
 
 #project3 .card{
   float: right;
+  max-width: 50%;
 }
 
 #project4 .card{
@@ -324,18 +338,22 @@ nav a:hover {
 }
 
 .projectDescription{
-  padding-top: 15px;
+  font-size: 20px;
+  padding-top: 18px;
+  padding-right: 25%;
   color: black;
   display: inline-block;
-  margin: 0px 0px 25px 25%;
+  padding-right: 15%;
+  /* margin: 0px 0px 25px 25%;*/
 }
 
 .descriptionLeft{
-  padding-top: 15px;
-  float: left;
+  font-size: 18px;
+  padding-top: 18px;
+  padding-left: 15%;
   color: black;
-  margin: 0px 25% 0 25px;
   display: inline-block;
+  /* margin: 0px 0px 25px 25%;*/
 }
 
 
