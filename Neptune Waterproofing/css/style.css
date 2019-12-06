@@ -108,6 +108,11 @@ body {
   display: inline-block;
 }
 
+.galleryLeft50{
+  max-width: 50%;
+  display: inline-block;
+}
+
 .roundedCard{
   border-radius: 25px;
 }
@@ -303,34 +308,50 @@ nav a:hover {
   filter: brightness(50%);
 }
 
-#project1{
+.bottomRed{
   border-bottom: groove red 7px;
+}
+
+.bottomBlue{
+  border-bottom: groove blue 7px;
 }
 
 #project1 .card{
   float: right;
 }
 
-#project2{
-  border-bottom: groove red 7px;
-}
-
 #project2 .card{
   float: left;
   display: inline-block;
+  padding-right: 20px;
 }
 
 #project3 .card{
+  display: inline-block;
   float: right;
-  max-width: 50%;
+  height: auto;
+  vertical-align: bottom;
 }
 
 #project4 .card{
   float: left;
+  padding-right: 20px;
 }
 
 #project5 .card{
   float: right;
+  max-width: 50%;
+}
+
+#project6 .card{
+  display: inline-block;
+  float: right;
+}
+
+.scrollGallery{
+  display: inline-block;
+  height: 650px;
+  overflow: scroll;
 }
 
 #projGradient{
@@ -347,8 +368,22 @@ nav a:hover {
   /* margin: 0px 0px 25px 25%;*/
 }
 
-.descriptionLeft{
-  font-size: 18px;
+.redHeader{
+  color: red;
+  font-family: "Lucida Console";
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.blueHeader{
+  color: blue;
+  font-family: "Lucida Console";
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.descriptionRight{
+  font-size: 20px;
   padding-top: 18px;
   padding-left: 15%;
   color: black;
@@ -435,7 +470,7 @@ nav a:hover {
 }
 
 #Services h3 {
-  text-decoration: underline blue;
+  color: white;
   text-transform: uppercase;
   font-family: "Lucida Console"
 }
