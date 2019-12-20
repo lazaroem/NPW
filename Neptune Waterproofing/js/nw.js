@@ -50,4 +50,13 @@ $(document).ready(function() {
         });
       }
     });
+
+    //When window gets resized, check if it is below 700 px, and let each img card take the entire width
+    $(window).resize(function() {
+      var w = $(window).width();
+      if(w < 701){
+        $("div").removeClass("w3-cell-row");
+      }
+
+    });
 });

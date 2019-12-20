@@ -368,6 +368,42 @@ nav a:hover {
   /* margin: 0px 0px 25px 25%;*/
 }
 
+.w3-cell-row{
+  padding-bottom: 40px;
+
+}
+
+.w3-card-4{
+
+}
+.gapRight{
+  padding-right: 10px;
+}
+
+
+.showerPanelimg{
+  object-fit: contain;
+}
+
+.gapBoth{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.gapLeft{
+  padding-left: 10px;
+}
+
+.w3-container{
+}
+
+.check{
+  border: blue solid 4px;
+  margin-right: 40px;
+  margin-left: 40px;
+  display: inline ;
+}
+
 .redHeader{
   color: red;
   font-family: "Lucida Console";
@@ -419,6 +455,7 @@ nav a:hover {
  background-image: linear-gradient(white,rgba(0,0,254,0.5), rgba(254,0,0,0.5), rgba(0,0,254,0.5), white);
 }
 
+
 /*FIGURE OUT A FORMULA TO SCALE THESE IMAGES NICELY, ON PC IT'S UGLY, ON LAPTOP IT'S NICE*/
 #installations .box {
  float: left;
@@ -455,6 +492,7 @@ nav a:hover {
  color: white;
  /*background: rgba(252, 252, 252, 0.5);*/
 }
+
 
 .installationCard {
   border: green 10px solid;
